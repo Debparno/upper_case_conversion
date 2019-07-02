@@ -6,7 +6,7 @@ app = Flask(__name__)
 def my_form():
     return render_template('index.html')
 
-@app.route('/', method = ['POST'])
+@app.route('/', method = ['post'])
 def my_form_post():
     text = request.form['u']
     processed_text = text.upper()
